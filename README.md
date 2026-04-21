@@ -1,1 +1,57 @@
-<img width="1275" height="909" alt="image" src="https://github.com/user-attachments/assets/7f04c2ca-3658-4ed2-a1e5-e7fa7ef3b90d" />
+Kanban Task Board
+-
+Vercel Live Link: https://task-manager-assessment-eta.vercel.app/ 
+
+This is an advance responsive Kanban-style drag-and-drop task board that allows people to manage their workflows. Users are authenticated with their own guest accounts and can create and control their tasks with robust data persistence. 
+
+Key Features: 
+- 
+- Guest Authentication: The project uses Supabase Anonymous Auth, permitting users to test the application immediately as a guest without any login.
+- Intelligent Task Management:
+
+    - Drag-and-Drop: Used "@hello-pangea/dnd" for easy and dynamic task reordering.
+      
+    - Priority Badges: Color-coded indicators for Low (green), Normal (yellow), and High (red) priority tasks.
+      
+    - Smart Due Dates: Tasks that are past due are highlighted in red as determined by local timezone parsing logic.
+- Optimistic UI Updates: The states are updated locally first prior to the Supabase request completing, offering a delay-free experience no matter the connection speed. 
+
+Tech Stack:
+- 
+- Framework: React 18 (Vite)
+- Language: TypeScript (Strict Mode)
+- Styling: Tailwind CSS (Modern "Linear" Aesthetic)
+- Backend: Supabase (PostgreSQL & Row-Level Security)
+- Deployment: Vercel (CI/CD Pipeline)
+
+Sample of Engineering Obstacles & Solutions: 
+-
+1. "Off-By-One" Date Bug
+
+     - Obstacle: The normal JavaScript "Date" objects had due dates that shifted back by one day due to UTC timezone offsets.
+     - Solution: I wrote code that manually parsed the ISO date string into separate components (month, day, year), then I rendered each of them after fixing the offset in order for the correct date to be displayed regardless of the user's timezone. 
+2. Database Integrity (CHECK Constraints)
+
+     - Obstacle: Storing only valid priority levels (Low, Normal, High) in the Supabase database.
+     - Solution: I built a SQL CHECK Constraint and Column Defaults in Supabase to make sure that the data was consistent between the frontend and the backend. 
+
+How to Set Up and Run Locally: 
+- 
+1. Clone the Repository:
+
+     - git clone https://github.com/EthanLe-hub/Task-Manager-Assessment
+     - cd task-board
+2. Install:
+
+     - npm install
+  
+3. Env Setup:
+
+     - Create a ".env" file with your "VITE_SUPABASE_URL" and "VITE_SUPABASE_ANON_KEY" variables.
+4. Run:
+
+     - npm run dev
+  
+Sample Image of My Application:
+-
+<img width="1231" height="780" alt="Screenshot 2026-04-20 015424" src="https://github.com/user-attachments/assets/0522a158-ceac-4008-a611-90cba7c719f5" />
