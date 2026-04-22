@@ -14,6 +14,10 @@ Key Features:
     - Priority Badges: Color-coded indicators for Low (green), Normal (yellow), and High (red) priority tasks.
       
     - Smart Due Dates: Tasks that are past due are highlighted in red as determined by local timezone parsing logic.
+ 
+    - Search & Filtering: Display of tasks can be filtered by their titles or by their priorities.
+ 
+    - Board / Statistics Summary: The numbers of total tasks, completed tasks, and overdue tasks are shown in the top-right corner, which dynamically changes based on filtering. 
 - Optimistic UI Updates: The states are updated locally first prior to the Supabase request completing, offering a delay-free experience no matter the connection speed. 
 
 Tech Stack:
