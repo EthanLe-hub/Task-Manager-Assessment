@@ -2,7 +2,7 @@ Kanban Task Board
 -
 Vercel Live Link: https://task-manager-assessment-eta.vercel.app/ 
 
-This is an advance responsive Kanban-style drag-and-drop task board that allows people to manage their workflows. Users are authenticated with their own guest accounts and can create and control their tasks with robust data persistence. 
+This is an advanced, responsive, Kanban-style drag-and-drop task board that helps people manage their workflows. Users are authenticated with their own guest accounts and can create and control their tasks with robust data persistence.
 
 Key Features: 
 - 
