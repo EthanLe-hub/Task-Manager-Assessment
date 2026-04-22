@@ -45,7 +45,7 @@ How to Set Up and Run Locally:
 
      - npm install
   
-3. Env Setup:
+3. Environment Setup:
 
      - Create a ".env" file with your "VITE_SUPABASE_URL" and "VITE_SUPABASE_ANON_KEY" variables.
 4. Run:
