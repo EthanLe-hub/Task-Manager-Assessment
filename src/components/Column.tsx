@@ -12,9 +12,10 @@ interface ColumnProps {
 
 const Column = ({ title, status, tasks, onTaskUpdate }: ColumnProps) => {
   return (
-    <div className="bg-gray-100 p-4 rounded-lg w-72 min-h-[500px] flex flex-col">
-      <h2 className="font-semibold mb-4 text-gray-700 uppercase text-sm tracking-widest">
-        {title} ({tasks.length})
+    <div className="bg-gray-100 border border-gray-200/50 p-4 rounded-xl flex-1 flex flex-col min-h-[500px]">
+      <h2 className="text-sm font-bold text-gray-600 mb-4 px-1 uppercase tracking-tight">
+        {title}
+        <span className="ml-2 text-gray-400 font-normal">({tasks.length})</span>
       </h2>
 
       <Droppable droppableId={status}>

@@ -60,7 +60,7 @@ const TaskCard = ({ task, index, onTaskDeleted }: TaskCardProps) => {
           ref={provided.innerRef}
           {...provided.draggableProps}
           {...provided.dragHandleProps}
-          className="bg-white p-4 mb-3 rounded-lg shadow-sm border border-gray-200 group relative hover:border-blue-300 transition-all"
+          className="bg-white p-4 mb-3 rounded-lg shadow-sm border border-gray-200 group relative hover:border-blue-400 hover:shadow-md hover:-translate-y-0.5 transition-all cursor-grab active:cursor-grabbing"
         >
           <div className="flex justify-between items-start">
             <p className="text-gray-800 text-sm font-medium">{task.title}</p>
