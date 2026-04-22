@@ -58,4 +58,5 @@ How to Set Up and Run Locally:
   
 Sample Image of My Application:
 -
-<img width="1231" height="780" alt="Screenshot 2026-04-20 015424" src="https://github.com/user-attachments/assets/0522a158-ceac-4008-a611-90cba7c719f5" />
+<img width="1481" height="949" alt="image" src="https://github.com/user-attachments/assets/d02edeeb-a7ba-4579-8cfe-90c78f2bc2f1" />
+
